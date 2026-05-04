@@ -2,8 +2,6 @@
 
 Monorepo template: **Yarn workspaces**, **Turborepo**, **Expo** (mobile), **Amplify Gen 2** (backend), and shared TypeScript packages under `@app/*`.
 
-Stack notes and where to add your own product docs: **[docs/README.md](docs/README.md)**. Short agent/repo guidance: **[AGENTS.md](AGENTS.md)**.
-
 ## Workspaces
 
 | Workspace | Role | Local dev |
