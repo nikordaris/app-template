@@ -1,0 +1,2 @@
+# Normalize text to LF so GitHub Actions (Linux) matches macOS and Prettier (LF).
+* text=auto eol=lf
