@@ -1,0 +1,31 @@
+{
+  "name": "@app/backend",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Amplify Gen 2 backend: auth, data, functions, and custom CDK resources.",
+  "type": "module",
+  "scripts": {
+    "sandbox": "ampx sandbox",
+    "sandbox:once": "ampx sandbox --once",
+    "sandbox:delete": "ampx sandbox delete",
+    "generate:outputs": "ampx generate outputs --out-dir ../../apps/mobile",
+    "generate:graphql": "ampx generate graphql-client-code --format typescript --out ../api/src/generated",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "echo 'no backend tests yet' && exit 0",
+    "build": "echo 'amplify build is driven by ampx pipeline-deploy in CI later' && exit 0"
+  },
+  "dependencies": {
+    "@aws-amplify/backend": "^1.6.0",
+    "@aws-amplify/backend-cli": "^1.4.0",
+    "@aws-sdk/types": "^3.654.0",
+    "aws-cdk-lib": "^2.165.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@app/config": "workspace:*",
+    "@types/node": "^20.16.13",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3"
+  }
+}

@@ -1,0 +1,18 @@
+node_modules
+dist
+build
+.turbo
+coverage
+ios
+android
+.expo
+.expo-shared
+**/amplify_outputs.json
+**/.amplify/**
+yarn.lock
+.yarn
+packages/api/src/generated/**
+
+# Long-form prose docs are owned by the product team; leave their formatting alone.
+*.md
+docs/

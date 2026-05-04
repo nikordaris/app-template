@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "MyApp",
+    "slug": "my-app",
+    "scheme": "my-app",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.myapp.mobile"
+    },
+    "android": {
+      "package": "com.myapp.mobile",
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0D12"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router", "expo-secure-store"],
+    "experiments": {
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    }
+  }
+}

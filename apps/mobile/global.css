@@ -1,0 +1,2 @@
+/* Relative path: PostCSS/Tailwind in NativeWind resolves this without workspace package name resolution. */
+@import '../../packages/ui/src/tokens/global.css';

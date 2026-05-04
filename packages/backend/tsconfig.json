@@ -1,0 +1,9 @@
+{
+  "extends": "@app/config/tsconfig/node.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["amplify/**/*", "*.ts"],
+  "exclude": ["node_modules", "dist", ".amplify", "amplify_outputs.json"]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@app/api",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Typed AppSync HTTP client and generated GraphQL operations.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json --noEmit",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "codegen": "echo '[@app/api codegen] No deployed schema in template; replace this script with ampx generate graphql-client-code when ready.' && exit 0"
+  },
+  "dependencies": {
+    "@app/auth": "workspace:*",
+    "@app/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "@app/config": "workspace:*",
+    "eslint": "^9.13.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

@@ -1,0 +1,66 @@
+# dependencies
+node_modules/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# build outputs
+dist/
+build/
+out/
+*.tsbuildinfo
+
+# turbo
+.turbo/
+
+# testing
+coverage/
+.nyc_output/
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# os
+.DS_Store
+Thumbs.db
+
+# env
+.env
+.env.local
+.env.*.local
+
+# expo
+apps/mobile/.expo/
+apps/mobile/.expo-shared/
+apps/mobile/dist/
+apps/mobile/web-build/
+apps/mobile/ios/
+apps/mobile/android/
+
+# expo prebuild outputs that should not be committed in MVP
+
+# amplify (do not commit personal sandbox outputs)
+**/amplify_outputs.json
+**/.amplify/
+packages/backend/amplify/.amplify/
+packages/backend/amplify/generated/
+
+# generated graphql artifacts: ignored until intentionally committed in Phase 01
+packages/api/src/generated/graphql/*
+packages/api/src/generated/types/*
+!packages/api/src/generated/graphql/.gitkeep
+!packages/api/src/generated/types/.gitkeep
