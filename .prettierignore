@@ -7,6 +7,8 @@ ios
 android
 .expo
 .expo-shared
+# Expo may rewrite this file; avoid CI churn vs Prettier.
+apps/mobile/expo-env.d.ts
 **/amplify_outputs.json
 **/.amplify/**
 yarn.lock
